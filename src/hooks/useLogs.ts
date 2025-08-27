@@ -25,7 +25,7 @@ export function useLogs({ customerId, page, searchQuery }: UseLogsParams): UseLo
     setError(null)
     
     try {
-      // tip: something maybe wrong here...
+      // tip: something maybe wrong here... or deeper
       const data = await fetchLogs({
         customer_id: customerId,
         page,

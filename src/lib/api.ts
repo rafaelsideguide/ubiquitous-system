@@ -14,6 +14,7 @@ export class ApiError extends Error {
 }
 
 export async function fetchLogs(params: FetchLogsParams): Promise<LogsResponse> {
+  // tip: something maybe wrong here
   const searchParams = new URLSearchParams({
     customer_id: params.customer_id,
     page: params.page.toString(),
